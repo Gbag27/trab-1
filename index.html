@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de produtos</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+            line-height: 1.75; 
+        }
+        #form input,
+        #form button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cadastre o seu Produto!</h2>
+    </header>
+    <main>
+        <div id="form">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome do produto"><br>
+            <label for="qtd">Quantidade:</label>
+            <input type="number" name="qtd" id="qtd" placeholder="Digite a quantidade"><br>
+            <label for="preco">Preço:</label>
+            <input type="tnumber" name="preco" id="preco" placeholder="Digite o preço do produto"><br>
+            <button onclick="Enviar()">Enviar</button>
+        </div>
+
+        <ul id="lista"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
