@@ -46,7 +46,7 @@ function revelar() {
         btm.style.marginLeft = "10px";
         btm.addEventListener("click", () => eliminar(index));
 
-        li.textContent = `Nome: ${produto.nome}, quantidade: ${produto.qtd}, preço: ${produto.preco}`;
+        li.textContent = `Nome: ${produto.nome} // Quantidade: ${produto.qtd} // Preço: R$${produto.preco}`
         li.appendChild(btm);
         document.getElementById("lista").appendChild(li);
   });
